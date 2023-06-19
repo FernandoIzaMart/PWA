@@ -1,45 +1,30 @@
-// Nombre del caché
-const CACHE_NAME = 'mi-cache';
+// Define el nombre de la caché actual
+const CACHE_NAME = 'my-cache';
 
-// Archivos a cachear
-const urlsToCache = [
-  '/',
-  '/index.html'
-];
-
-// Instalación del Service Worker
+// Instala el Service Worker
 self.addEventListener('install', event => {
-  event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(cache => cache.addAll(urlsToCache))
-  );
+  console.log('Instalado el SW');
 });
 
-// Activación del Service Worker
+// Activa el Service Worker
 self.addEventListener('activate', event => {
+  console.log('SW Activado');
+  
   event.waitUntil(
-    caches.keys()
-      .then(cacheNames => {
-        return Promise.all(
-          cacheNames.map(cache => {
-            if (cache !== CACHE_NAME) {
-              return caches.delete(cache);
-            }
-          })
-        );
-      })
+    caches.keys().then(cacheNames => {
+      return Promise.all(
+        cacheNames.map(cacheName => {
+          if (cacheName !== CACHE_NAME) {
+            // Borra la caché si no coincide con el nombre de la caché actual
+            return caches.delete(cacheName);
+          }
+        })
+      );
+    })
   );
 });
 
-// Intercepta las solicitudes y busca en el caché
+// Intercepta y responde a las solicitudes fetch
 self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches.match(event.request)
-      .then(response => {
-        if (response) {
-          return response;
-        }
-        return fetch(event.request);
-      })
-  );
+  console.log('Fetch', event);
 });

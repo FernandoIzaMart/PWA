@@ -1,31 +1,992 @@
-<!-- Archivo: index.html -->
+<!doctype html>
+<html lang="es">
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mi PWA</title>
-        <link rel="manifest" href="./manifest.json">
-        <!-- Agrega aquí tus etiquetas meta, estilos, etc. -->
-    </head>
-<body>
-  <!-- Contenido de tu aplicación -->
-  <h1>Mi PWA</h1>
-  <p>Bienvenido a mi PWA de ejemplo.</p>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="mvshub">
+  <meta name="author" content="mvshub">
+  <title>mvshub - movies | video | streaming</title>
+  <link rel="shortcut icon" type="image/png"
+    href="https://d58ohtx80p2sd.cloudfront.net/mvshub/favicoicon/favicon.png" />
+    <!--aquí el manifest del pwa-->
+     <link rel="manifest" href="manifest.json">
+     <script src="js/apv.js"></script>
+     <!--IOS Support-->
+     <link rel="apple-touch-icon" href="/assets/icons/icon-512x512.png">
+     <meta name="apple-mobile-web-app-status-bar" content="#281B39">
+     <meta name="thme-color" content="#281B39">
+     
   
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+  <header>
+    <nav class="nav-header">
+      <div class="py-2">
+        <img src="https://d58ohtx80p2sd.cloudfront.net/landing_mvshub_test/assets/images/logo/mvs.svg"
+          alt="logo mvs hub" width="150px" height="auto">
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+  <section class="row-1">
+
+    <span id="Paquetes"></span>
+    <div class="col-md-12 row-info d-flex justify-content-center">
+
+      <h1 class="text-center text-white p-4 text-uppercase text-row-1">Aquí tienes materiales que puedes usar en tus
+        redes sociales</h1>
+
+    </div>
+
+    <!-- Sección desktop -->
+    <div id="row1-indicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+      <div class="carousel-inner ftco-section">
+        <div class="carousel-item  active mb-5">
+          <div class="cards-wrapper featured-carousel owl-carousel">
+
+            <!-- Posto organicos campaña -->
+
+               <!-- Post Seis-->
+               <div class="work mx-3">
+                <div class="card card-pack">
+  
+  
+                  <div class="card-body">
+                    <div class=" platform  flex-wrap justify-content-center col-12">
+                      <img class="imgrs" src="img_post/img06.png" alt="imagen">
+                    </div>
+                    <div class="d-flex justify-content-center my-2">
+                      <a href="img_post/img06.png" download class="btn-subscribe">
+                        Descargar imagen
+                      </a>
+                    </div>
+                  </div>
+  
+  
+  
+                  <!--Collapse-->
+                  <div class="flex-container pglobal accordion accordion-flush text-white" id="accordion-price">
+                    <div class="flex-items mt-3" style="width: 100%;">
+                      <div class="card-titlePp text-center">
+                        <a class="btn text-white lh-1 d-flex justify-content-around align-items-center accordion-btn collapsed"
+                          data-bs-toggle="collapse" href="#collapsePost02" role="button" aria-expanded="false"
+                          aria-controls="collapseFamiliarInter">
+                          <h6>TEXTO RECOMENDADO</h6>
+                        </a>
+  
+                      </div>
+  
+                      <div class="collapse show" id="collapsePost02">
+                        <hr>
+                        <div class="px-4">
+                          <div class="add-esencial mt-4">
+                            <p id="copy6">
+                              ¡Ahórrate hasta 40% en plataformas! y olvídate de perder el tiempo tratando de encontrar qué ver, en mvshub ¡lo tienes todo, junto, a un precio increíble!
+                            </p>
+                          </div>
+                          <div>
+                          </div>
+                        </div>
+  
+                        <div class="d-flex justify-content-center align-items-center mb-4 p-1">
+                          <a id="copyButton6" class="btn-subscribe">Copiar texto </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+              </div>
+  
+              <!-- Post Siete -->
+  
+    
+                 <div class="work mx-3">
+                  <div class="card card-pack">
+    
+    
+                    <div class="card-body">
+                      <div class=" platform  flex-wrap justify-content-center col-12">
+                        <img class="imgrs" src="img_post/img07.png" alt="imagen">
+                      </div>
+                      <div class="d-flex justify-content-center my-2">
+                        <a href="img_post/img07.png" download class="btn-subscribe">
+                          Descargar imagen
+                        </a>
+                      </div>
+                    </div>
+    
+    
+    
+                    <!--Collapse-->
+                    <div class="flex-container pglobal accordion accordion-flush text-white" id="accordion-price">
+                      <div class="flex-items mt-3" style="width: 100%;">
+                        <div class="card-titlePp text-center">
+                          <a class="btn text-white lh-1 d-flex justify-content-around align-items-center accordion-btn collapsed"
+                            data-bs-toggle="collapse" href="#collapsePost02" role="button" aria-expanded="false"
+                            aria-controls="collapseFamiliarInter">
+                            <h6>TEXTO RECOMENDADO</h6>
+                          </a>
+    
+                        </div>
+    
+                        <div class="collapse show" id="collapsePost02">
+                          <hr>
+                          <div class="px-4">
+                            <div class="add-esencial mt-4">
+                              <p id="copy7">
+                                Si te perdiste un programa 🥴 o lo quieres volver a ver, mvshub es el lugar indicado. Disfruta tus canales de TV sin restricciones de horario.
+                              </p>
+                            </div>
+                            <div>
+                            </div>
+                          </div>
+    
+                          <div class="d-flex justify-content-center align-items-center mb-4 p-1">
+                            <a id="copyButton7" class="btn-subscribe">Copiar texto </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    
+                </div>
+
+
+            <!-- Post orgánicos contenido  -->
+            <!-- Post Uno-->
+            <div class="work mx-3">
+              <div class="card card-pack">
+
+
+                <div class="card-body">
+                  <div class=" platform flex-wrap justify-content-center col-12">
+                    <img class="imgrs" src="img_post/img01.jpg" alt="imagen">
+                  </div>
+                  <div class="d-flex justify-content-center my-2">
+                    <a href="img_post/img01.jpg" download class="btn-subscribe">
+                      Descargar imagen
+                    </a>
+                  </div>
+                </div>
+
+
+
+                <!--Collapse-->
+                <div class="flex-container pglobal accordion accordion-flush text-white" id="accordion-price">
+                  <div class="flex-items mt-3" style="width: 100%;">
+                    <div class="card-titlePp text-center">
+                      <a class="btn text-white lh-1 d-flex justify-content-around align-items-center accordion-btn collapsed"
+                        data-bs-toggle="collapse" href="#collapsePost01" role="button" aria-expanded="false"
+                        aria-controls="collapseFamiliarInter">
+                        <h6>TEXTO RECOMENDADO</h6>
+                      </a>
+
+                    </div>
+
+                    <!--Post Uno-->
+                    <div class="collapse show" id="collapsePost01">
+                      <hr>
+                      <div class="px-4">
+                        <div class="add-esencial mt-4">
+                          <p id="copy1">
+                            ¿Andas nostálgico? Te va a encantar #DosCorazones 😍, basada en hechos reales, cuenta la historia paralela de dos parejas que se conectan por una enfermedad y un curioso giro del destino. Solo por #UniversalPlus, en #mvshub ¡pagando menos!
+                          </p>
+                        </div>
+                        <div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-center align-items-center mb-4 p-1">
+                        <a id="copyButton1" class="btn-subscribe">Copiar texto </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Post dos-->
+            <div class="work mx-3">
+              <div class="card card-pack">
+
+
+                <div class="card-body">
+                  <div class=" platform flex-wrap justify-content-center col-12">
+                    <img class="imgrs" src="img_post/img02.jpg" alt="imagen">
+                  </div>
+                  <div class="d-flex justify-content-center my-2">
+                    <a href="img_post/img02.jpg" download class="btn-subscribe">
+                      Descargar imagen
+                    </a>
+                  </div>
+                </div>
+
+
+
+                <!--Collapse-->
+                <div class="flex-container pglobal accordion accordion-flush text-white" id="accordion-price">
+                  <div class="flex-items mt-3" style="width: 100%;">
+                    <div class="card-titlePp text-center">
+                      <a class="btn text-white lh-1 d-flex justify-content-around align-items-center accordion-btn collapsed"
+                        data-bs-toggle="collapse" href="#collapsePost02" role="button" aria-expanded="false"
+                        aria-controls="collapseFamiliarInter">
+                        <h6>TEXTO RECOMENDADO</h6>
+                      </a>
+
+                    </div>
+
+                    <div class="collapse show" id="collapsePost02">
+                      <hr>
+                      <div class="px-4">
+                        <div class="add-esencial mt-4">
+                          <p id="copy2">
+                            Si buscas pasar un buen rato #LaSuerteDeLoli es tu opción. Adéntrate en el giro inesperado que vive Loli (@silvianavarroyya) quien, de ser una mujer independiente, tiene que encargarse de los hijos de su mejor amiga. Disfrútala en el dispositivo que quieras en #mvshub por #Telemundo, de lunes a viernes a las 21:00 hrs.
+                          </p>
+                        </div>
+                        <div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-center align-items-center mb-4 p-1">
+                        <a id="copyButton2" class="btn-subscribe">Copiar texto </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+            <!-- Post tres-->
+            <div class="work mx-3">
+              <div class="card card-pack">
+
+
+                <div class="card-body">
+                  <div class=" platform  flex-wrap justify-content-center col-12">
+                    <img class="imgrs" src="img_post/img03.jpg" alt="imagen">
+                  </div>
+                  <div class="d-flex justify-content-center my-2">
+                    <a href="img_post/img03.jpg" download class="btn-subscribe">
+                      Descargar imagen
+                    </a>
+                  </div>
+                </div>
+
+
+
+                <!--Collapse-->
+                <div class="flex-container pglobal accordion accordion-flush text-white" id="accordion-price">
+                  <div class="flex-items mt-3" style="width: 100%;">
+                    <div class="card-titlePp text-center">
+                      <a class="btn text-white lh-1 d-flex justify-content-around align-items-center accordion-btn collapsed"
+                        data-bs-toggle="collapse" href="#collapsePost02" role="button" aria-expanded="false"
+                        aria-controls="collapseFamiliarInter">
+                        <h6>TEXTO RECOMENDADO</h6>
+                      </a>
+
+                    </div>
+
+                    <div class="collapse show" id="collapsePost02">
+                      <hr>
+                      <div class="px-4">
+                        <div class="add-esencial mt-4">
+                          <p id="copy3">
+                            ¡No te puedes perder el estreno de la polémica serie #TheIdol! 🎤🤩 por @HBOMaxLA en #mvshub, pagando menos. Estremécete con @theweeknd y @lilyrose_depp en la extrema, glamourosa y oscura historia de una estrella del pop que se enamora del dueño de un club de Los Angeles, que esconde un terrible secreto.  
+                          </p>
+                        </div>
+                        <div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-center align-items-center mb-4 p-1">
+                        <a id="copyButton3" class="btn-subscribe">Copiar texto </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Post cuatro-->
+            <div class="work mx-3">
+              <div class="card card-pack">
+
+
+                <div class="card-body">
+                  <div class=" platform flex-wrap justify-content-center col-12">
+                    <img class="imgrs" src="img_post/img04.jpg" alt="imagen">
+                  </div>
+                  <div class="d-flex justify-content-center my-2">
+                    <a href="img_post/img04.jpg" download class="btn-subscribe">
+                      Descargar imagen
+                    </a>
+                  </div>
+                </div>
+
+
+
+                <!--Collapse-->
+                <div class="flex-container pglobal accordion accordion-flush text-white" id="accordion-price">
+                  <div class="flex-items mt-3" style="width: 100%;">
+                    <div class="card-titlePp text-center">
+                      <a class="btn text-white lh-1 d-flex justify-content-around align-items-center accordion-btn collapsed"
+                        data-bs-toggle="collapse" href="#collapsePost02" role="button" aria-expanded="false"
+                        aria-controls="collapseFamiliarInter">
+                        <h6>TEXTO RECOMENDADO</h6>
+                      </a>
+
+                    </div>
+
+                    <div class="collapse show" id="collapsePost02">
+                      <hr>
+                      <div class="px-4">
+                        <div class="add-esencial mt-4">
+                          <p id="copy4">
+                            ¿Eres fan de Rocky? 🥊 No te puedes perder #Creed III 🤩,  la tercera entrega de esta saga en la que el hijo perdido de Apollo Creed, Adonis, se encuentra con su pasado y lo enfrenta con maestría dentro y fuera del ring. Ya está por #PrimeVideo en #mvshub ¡pagando menos! 🤑
+                          </p>
+                        </div>
+                        <div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-center align-items-center mb-4 p-1">
+                        <a id="copyButton4" class="btn-subscribe">Copiar texto </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Post Cinco-->
+            <div class="work mx-3">
+              <div class="card card-pack">
+
+
+                <div class="card-body">
+                  <div class=" platform flex-wrap justify-content-center col-12">
+                    <img class="imgrs" src="img_post/img05.jpg" alt="imagen">
+                  </div>
+                  <div class="d-flex justify-content-center my-2">
+                    <a href="img_post/img05.jpg" download class="btn-subscribe">
+                      Descargar imagen
+                    </a>
+                  </div>
+                </div>
+
+
+
+                <!--Collapse-->
+                <div class="flex-container pglobal accordion accordion-flush text-white" id="accordion-price">
+                  <div class="flex-items mt-3" style="width: 100%;">
+                    <div class="card-titlePp text-center">
+                      <a class="btn text-white lh-1 d-flex justify-content-around align-items-center accordion-btn collapsed"
+                        data-bs-toggle="collapse" href="#collapsePost02" role="button" aria-expanded="false"
+                        aria-controls="collapseFamiliarInter">
+                        <h6>TEXTO RECOMENDADO</h6>
+                      </a>
+
+                    </div>
+
+                    <div class="collapse show" id="collapsePost02">
+                      <hr>
+                      <div class="px-4">
+                        <div class="add-esencial mt-4">
+                          <p id="copy5">
+                            El mercenario Tyler Rake vuelve con una nueva misión: debe ayudar a que un gángster de Georgia y su familia puedan escapar de la cárcel. Vive una tarde llena de acción con Misión de Rescate 2, ya disponible en #Netflix por #mvshub ¡pagando menos!
+                          </p>
+                        </div>
+                        <div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-center align-items-center mb-4 p-1">
+                        <a id="copyButton5" class="btn-subscribe">Copiar texto </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+         
+
+
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+    <!--ancla al top-->
+  </section>
+
+
+  <!-- Sección móvil -->
+  <section class="row-1-mobile">
+    <div class="col-md-12 row-info d-flex justify-content-center">
+      <h1 class="text-center text-white p-4 text-uppercase text-row-1">Aquí tienes materiales que puedes usar en tus
+        redes sociales</h1>
+    </div>
+
+
+    <div id="row1-mobile-indicators" class="carousel slide px-1" data-bs-ride="carousel" data-bs-interval="false">
+
+
+
+
+      <!--aquí van las flechas-->
+      <button class="carousel-control-prev control-collapse" type="button" data-bs-target="#row1-mobile-indicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span> </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#row1-mobile-indicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon control-collapse" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span></button>
+      <!--terminan las flechas-->
+
+
+
+
+      <div class="carousel-inner mobile-slide2">
+        <center>
+
+
+
+ 
+
+          
+          <!--Post 01-->
+          <div class="carousel-item active">
+            <div class="card card-pack mb-1">
+              <div class="card-body">
+                <div class=" platform d-flex flex-wrap justify-content-center col-12">
+                  <img class="imgrs" src="img_post/img01.jpg" alt="imagen">
+                </div>
+                <div class="d-flex justify-content-center my-2">
+                  <a href="img_post/img01.jpg" download class="btn-subscribe">
+                    Descargar imagen
+                  </a>
+                </div>
+              </div>
+
+                <!--Collapse-->
+                <div class="flex-container pglobal accordion accordion-flush text-white" id="accordion-price">
+                  <div class="flex-items mt-3" style="width: 100%;">
+                    <div class="card-titlePp text-center">
+                      <a class="btn text-white lh-1 d-flex justify-content-around align-items-center accordion-btn collapsed"
+                        data-bs-toggle="collapse" href="#collapsePost01" role="button" aria-expanded="false"
+                        aria-controls="collapseFamiliarInter">
+                        <h6>TEXTO RECOMENDADO</h6>
+                      </a>
+
+                    </div>
+
+                    <!--Post Uno-->
+                    <div class="collapse show" id="collapsePost01">
+                      <hr>
+                      <div class="px-4">
+                        <div class="add-esencial mt-4">
+                          <p id="copy1m">
+                            ¿Andas nostálgico? Te va a encantar #DosCorazones 😍, basada en hechos reales, cuenta la historia paralela de dos parejas que se conectan por una enfermedad y un curioso giro del destino. Solo por #UniversalPlus, en #mvshub ¡pagando menos!
+                          </p>
+                        </div>
+                        <div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-center align-items-center mb-4 p-1">
+                        <a id="copyButton1m" class="btn-subscribe">Copiar texto </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+           
+
+
+          
+             
+
+              <!--Collapse-->
+              
+            </div>
+          </div>
+
+          <!--Post 02-->
+          <div class="carousel-item">
+            <div class="card card-pack mb-1">
+              <div class="card-body">
+                <div class=" platform d-flex flex-wrap justify-content-center col-12">
+                  <img class="imgrs" src="img_post/img02.jpg" alt="imagen">
+                </div>
+                <div class="d-flex justify-content-center my-2">
+                  <a href="img_post/img02.jpg" download class="btn-subscribe">
+                    Descargar imagen
+                  </a>
+                </div>
+              </div>
+
+                <!--Collapse-->
+                <div class="flex-container pglobal accordion accordion-flush text-white" id="accordion-price">
+                  <div class="flex-items mt-3" style="width: 100%;">
+                    <div class="card-titlePp text-center">
+                      <a class="btn text-white lh-1 d-flex justify-content-around align-items-center accordion-btn collapsed"
+                        data-bs-toggle="collapse" href="#collapsePost01" role="button" aria-expanded="false"
+                        aria-controls="collapseFamiliarInter">
+                        <h6>TEXTO RECOMENDADO</h6>
+                      </a>
+
+                    </div>
+
+                    <!--Post Uno-->
+                    <div class="collapse show" id="collapsePost01">
+                      <hr>
+                      <div class="px-4">
+                        <div class="add-esencial mt-4">
+                          <p id="copy2m">
+                            Si buscas pasar un buen rato #LaSuerteDeLoli es tu opción. Adéntrate en el giro inesperado que vive Loli (@silvianavarroyya) quien, de ser una mujer independiente, tiene que encargarse de los hijos de su mejor amiga. Disfrútala en el dispositivo que quieras en #mvshub por #Telemundo, de lunes a viernes a las 21:00 hrs.
+                          </p>
+                        </div>
+                        <div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-center align-items-center mb-4 p-1">
+                        <a id="copyButton2m" class="btn-subscribe">Copiar texto </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+           
+
+
+          
+             
+
+              <!--Collapse-->
+              
+            </div>
+          </div>
+
+           <!--Post 03-->
+           <div class="carousel-item">
+            <div class="card card-pack mb-1">
+              <div class="card-body">
+                <div class=" platform d-flex flex-wrap justify-content-center col-12">
+                  <img class="imgrs" src="img_post/img03.jpg" alt="imagen">
+                </div>
+                <div class="d-flex justify-content-center my-2">
+                  <a href="img_post/img03.jpg" download class="btn-subscribe">
+                    Descargar imagen
+                  </a>
+                </div>
+              </div>
+
+                <!--Collapse-->
+                <div class="flex-container pglobal accordion accordion-flush text-white" id="accordion-price">
+                  <div class="flex-items mt-3" style="width: 100%;">
+                    <div class="card-titlePp text-center">
+                      <a class="btn text-white lh-1 d-flex justify-content-around align-items-center accordion-btn collapsed"
+                        data-bs-toggle="collapse" href="#collapsePost01" role="button" aria-expanded="false"
+                        aria-controls="collapseFamiliarInter">
+                        <h6>TEXTO RECOMENDADO</h6>
+                      </a>
+
+                    </div>
+
+                    <!--Post Uno-->
+                    <div class="collapse show" id="collapsePost01">
+                      <hr>
+                      <div class="px-4">
+                        <div class="add-esencial mt-4">
+                          <p id="copy3m">
+                            ¡No te puedes perder el estreno de la polémica serie #TheIdol! 🎤🤩 por @HBOMaxLA en #mvshub, pagando menos. Estremécete con @theweeknd y @lilyrose_depp en la extrema, glamourosa y oscura historia de una estrella del pop que se enamora del dueño de un club de Los Angeles, que esconde un terrible secreto.  
+                          </p>
+                        </div>
+                        <div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-center align-items-center mb-4 p-1">
+                        <a id="copyButton3m" class="btn-subscribe">Copiar texto </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+           
+
+
+          
+             
+
+              <!--Collapse-->
+              
+            </div>
+          </div>
+
+            <!--Post 04-->
+            <div class="carousel-item">
+              <div class="card card-pack mb-1">
+                <div class="card-body">
+                  <div class=" platform d-flex flex-wrap justify-content-center col-12">
+                    <img class="imgrs" src="img_post/img04.jpg" alt="imagen">
+                  </div>
+                  <div class="d-flex justify-content-center my-2">
+                    <a href="img_post/img04.jpg" download class="btn-subscribe">
+                      Descargar imagen
+                    </a>
+                  </div>
+                </div>
+  
+                  <!--Collapse-->
+                  <div class="flex-container pglobal accordion accordion-flush text-white" id="accordion-price">
+                    <div class="flex-items mt-3" style="width: 100%;">
+                      <div class="card-titlePp text-center">
+                        <a class="btn text-white lh-1 d-flex justify-content-around align-items-center accordion-btn collapsed"
+                          data-bs-toggle="collapse" href="#collapsePost01" role="button" aria-expanded="false"
+                          aria-controls="collapseFamiliarInter">
+                          <h6>TEXTO RECOMENDADO</h6>
+                        </a>
+  
+                      </div>
+  
+                      <!--Post Uno-->
+                      <div class="collapse show" id="collapsePost01">
+                        <hr>
+                        <div class="px-4">
+                          <div class="add-esencial mt-4">
+                            <p id="copy4m">
+                              ¿Eres fan de Rocky? 🥊 No te puedes perder #Creed III 🤩,  la tercera entrega de esta saga en la que el hijo perdido de Apollo Creed, Adonis, se encuentra con su pasado y lo enfrenta con maestría dentro y fuera del ring. Ya está por #PrimeVideo en #mvshub ¡pagando menos! 🤑
+                            </p>
+                          </div>
+                          <div>
+                          </div>
+                        </div>
+  
+                        <div class="d-flex justify-content-center align-items-center mb-4 p-1">
+                          <a id="copyButton4m" class="btn-subscribe">Copiar texto </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+             
+  
+  
+            
+               
+  
+                <!--Collapse-->
+                
+              </div>
+            </div>
+
+            <!--Post 05-->
+            <div class="carousel-item">
+              <div class="card card-pack mb-1">
+                <div class="card-body">
+                  <div class=" platform d-flex flex-wrap justify-content-center col-12">
+                    <img class="imgrs" src="img_post/img05.jpg" alt="imagen">
+                  </div>
+                  <div class="d-flex justify-content-center my-2">
+                    <a href="img_post/img05.jpg" download class="btn-subscribe">
+                      Descargar imagen
+                    </a>
+                  </div>
+                </div>
+  
+                  <!--Collapse-->
+                  <div class="flex-container pglobal accordion accordion-flush text-white" id="accordion-price">
+                    <div class="flex-items mt-3" style="width: 100%;">
+                      <div class="card-titlePp text-center">
+                        <a class="btn text-white lh-1 d-flex justify-content-around align-items-center accordion-btn collapsed"
+                          data-bs-toggle="collapse" href="#collapsePost01" role="button" aria-expanded="false"
+                          aria-controls="collapseFamiliarInter">
+                          <h6>TEXTO RECOMENDADO</h6>
+                        </a>
+  
+                      </div>
+  
+                      <!--Post Uno-->
+                      <div class="collapse show" id="collapsePost01">
+                        <hr>
+                        <div class="px-4">
+                          <div class="add-esencial mt-4">
+                            <p id="copy5m">
+                              El mercenario Tyler Rake vuelve con una nueva misión: debe ayudar a que un gángster de Georgia y su familia puedan escapar de la cárcel. Vive una tarde llena de acción con Misión de Rescate 2, ya disponible en #Netflix por #mvshub ¡pagando menos!
+                            </p>
+                          </div>
+                          <div>
+                          </div>
+                        </div>
+  
+                        <div class="d-flex justify-content-center align-items-center mb-4 p-1">
+                          <a id="copyButton5m" class="btn-subscribe">Copiar texto </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+             
+  
+  
+            
+               
+  
+                <!--Collapse-->
+                
+              </div>
+            </div>
+
+             <!--Post 06-->
+             <div class="carousel-item">
+              <div class="card card-pack mb-1">
+                <div class="card-body">
+                  <div class=" platform d-flex flex-wrap justify-content-center col-12">
+                    <img class="imgrs" src="img_post/img06.png" alt="imagen">
+                  </div>
+                  <div class="d-flex justify-content-center my-2">
+                    <a href="img_post/img06.png" download class="btn-subscribe">
+                      Descargar imagen
+                    </a>
+                  </div>
+                </div>
+  
+                  <!--Collapse-->
+                  <div class="flex-container pglobal accordion accordion-flush text-white" id="accordion-price">
+                    <div class="flex-items mt-3" style="width: 100%;">
+                      <div class="card-titlePp text-center">
+                        <a class="btn text-white lh-1 d-flex justify-content-around align-items-center accordion-btn collapsed"
+                          data-bs-toggle="collapse" href="#collapsePost01" role="button" aria-expanded="false"
+                          aria-controls="collapseFamiliarInter">
+                          <h6>TEXTO RECOMENDADO</h6>
+                        </a>
+  
+                      </div>
+  
+                      <!--Post Uno-->
+                      <div class="collapse show" id="collapsePost01">
+                        <hr>
+                        <div class="px-4">
+                          <div class="add-esencial mt-4">
+                            <p id="copy6m">
+                              ¡Ahórrate hasta 40% en plataformas! y olvídate de perder el tiempo tratando de encontrar qué ver, en mvshub ¡lo tienes todo, junto, a un precio increíble!
+                            </p>
+                          </div>
+                          <div>
+                          </div>
+                        </div>
+  
+                        <div class="d-flex justify-content-center align-items-center mb-4 p-1">
+                          <a id="copyButton6m" class="btn-subscribe">Copiar texto </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+             
+  
+  
+            
+               
+  
+                <!--Collapse-->
+                
+              </div>
+            </div>
+
+              <!--Post 07-->
+              <div class="carousel-item">
+                <div class="card card-pack mb-1">
+                  <div class="card-body">
+                    <div class=" platform d-flex flex-wrap justify-content-center col-12">
+                      <img class="imgrs" src="img_post/img07.png" alt="imagen">
+                    </div>
+                    <div class="d-flex justify-content-center my-2">
+                      <a href="img_post/img07.png" download class="btn-subscribe">
+                        Descargar imagen
+                      </a>
+                    </div>
+                  </div>
+    
+                    <!--Collapse-->
+                    <div class="flex-container pglobal accordion accordion-flush text-white" id="accordion-price">
+                      <div class="flex-items mt-3" style="width: 100%;">
+                        <div class="card-titlePp text-center">
+                          <a class="btn text-white lh-1 d-flex justify-content-around align-items-center accordion-btn collapsed"
+                            data-bs-toggle="collapse" href="#collapsePost01" role="button" aria-expanded="false"
+                            aria-controls="collapseFamiliarInter">
+                            <h6>TEXTO RECOMENDADO</h6>
+                          </a>
+    
+                        </div>
+    
+                        <!--Post Uno-->
+                        <div class="collapse show" id="collapsePost01">
+                          <hr>
+                          <div class="px-4">
+                            <div class="add-esencial mt-4">
+                              <p id="copy7m">
+                                Si te perdiste un programa 🥴 o lo quieres volver a ver, mvshub es el lugar indicado. Disfruta tus canales de TV sin restricciones de horario.
+                              </p>
+                            </div>
+                            <div>
+                            </div>
+                          </div>
+    
+                          <div class="d-flex justify-content-center align-items-center mb-4 p-1">
+                            <a id="copyButton7m" class="btn-subscribe">Copiar texto </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+               
+    
+    
+              
+                 
+    
+                  <!--Collapse-->
+                  
+                </div>
+              </div>
+</center>
+      </div>
+
+
+    </div>
+
+
+
+  </section>
+
+
+
+
+
+
+
+  <div class="container p-0">
+    <footer class="">
+      <div class="container p-0">
+
+        <section class="d-flex justify-content-between p-4 footer-2">
+          <div class="my-2">
+            <img id="logo-footer"
+              src="https://d58ohtx80p2sd.cloudfront.net/landing_mvshub_test/assets/images/logo/main_logo_mvshub.svg"
+              alt="mvshub">
+          </div>
+          <div class="m-2">
+            <a class="icons" href="https://www.facebook.com/MVSHub-109491491749674/" target="_blank" role="button"><img
+                src="https://d58ohtx80p2sd.cloudfront.net/landing_mvshub_test/assets/icons/footer/facebook.svg"
+                alt="facebook"></a>
+            <a class="icons" href="https://www.instagram.com/mvshub/" target="_blank" role="button"><img
+                src="https://d58ohtx80p2sd.cloudfront.net/landing_mvshub_test/assets/icons/footer/instagram.svg"
+                alt="instagram"></a>
+            <a class="icons" href="https://www.tiktok.com/@mvshub_" target="_blank" role="button"><img
+                src="https://d58ohtx80p2sd.cloudfront.net/landing_mvshub_test/assets/icons/footer/tiktok.svg"
+                alt="tiktok"></a>
+            <a class="icons" href="https://twitter.com/MVSHub" target="_blank" role="button"><img
+                src="https://d58ohtx80p2sd.cloudfront.net/landing_mvshub_test/assets/icons/footer/twitter.svg"
+                alt="twitter"></a>
+            <a class="icons" href="https://www.youtube.com/channel/UCPogX9uva5IRh2bavpXVMPg" target="_blank"
+              role="button"><img
+                src="https://d58ohtx80p2sd.cloudfront.net/landing_mvshub_test/assets/icons/footer/youtube.svg"
+                alt="youtube"></a>
+          </div>
+
+        </section>
+      </div>
+
+      <div class="text-center p-2" style="background-color: black">
+        <a class="text-white text-decoration-none copyright" href="#">
+          © 2022 mvs<b>hub</b>. Todos los derechos reservados</a>
+      </div>
+    </footer>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+
+
+  <script src="js/copy-text.js"></script>
+  <script src="jquery.min.js"></script>
+  <script src="owl.carousel.min.js"></script>
+  <script src="main.js"></script>
+  <!--Script Carousel Movies and Series-->
+  <script src="carousel-movies-series.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+
+
+
+
+
   <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./service-worker.js')
-          .then((registration) => {
-            console.log('Service Worker registrado con éxito:', registration);
-          })
-          .catch((error) => {
-            console.log('Error al registrar el Service Worker:', error);
-          });
+    $(document).ready(function () {
+      $(".control-collapse").click(function () {
+        $(".collapse").collapse('hide');
       });
-    }
+    });
   </script>
+
+
+  <script>
+    const buttons = document.querySelectorAll('button');
+    buttons.forEach(button => {
+      button.addEventListener('click', function () {
+        buttons.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+
+
+  </script>
+
+
+
+
+
 </body>
+
 </html>
