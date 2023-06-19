@@ -1,0 +1,31 @@
+<!-- Archivo: index.html -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi PWA</title>
+        <link rel="manifest" href="/manifest.json">
+        <!-- Agrega aquí tus etiquetas meta, estilos, etc. -->
+    </head>
+<body>
+  <!-- Contenido de tu aplicación -->
+  <h1>Mi PWA</h1>
+  <p>Bienvenido a mi PWA de ejemplo.</p>
+  
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then((registration) => {
+            console.log('Service Worker registrado con éxito:', registration);
+          })
+          .catch((error) => {
+            console.log('Error al registrar el Service Worker:', error);
+          });
+      });
+    }
+  </script>
+</body>
+</html>
