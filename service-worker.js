@@ -1,49 +1,45 @@
-// Define el nombre de la caché
-const cacheName = 'mi-pwa-cache';
+// Nombre del caché
+const CACHE_NAME = 'mi-cache';
 
-// Lista de archivos a cachear
-const filesToCache = [
+// Archivos a cachear
+const urlsToCache = [
   '/',
-  '/index.html',
-  '/styles.css',
-  '/script.js',
-  '/imagen1.jpg',
-  '/imagen2.jpg',
-  // Agrega aquí más archivos que deseas cachear
+  '/index.html'
 ];
 
-// Evento de instalación del Service Worker
-self.addEventListener('install', (event) => {
+// Instalación del Service Worker
+self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open(cacheName)
-      .then((cache) => {
-        return cache.addAll(filesToCache);
-      })
+    caches.open(CACHE_NAME)
+      .then(cache => cache.addAll(urlsToCache))
   );
 });
 
-// Evento de activación del Service Worker
-self.addEventListener('activate', (event) => {
+// Activación del Service Worker
+self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys()
-      .then((cacheNames) => {
+      .then(cacheNames => {
         return Promise.all(
-          cacheNames.filter((name) => {
-            return name !== cacheName;
-          }).map((name) => {
-            return caches.delete(name);
+          cacheNames.map(cache => {
+            if (cache !== CACHE_NAME) {
+              return caches.delete(cache);
+            }
           })
         );
       })
   );
 });
 
-// Evento fetch para interceptar las solicitudes de red
-self.addEventListener('fetch', (event) => {
+// Intercepta las solicitudes y busca en el caché
+self.addEventListener('fetch', event => {
   event.respondWith(
     caches.match(event.request)
-      .then((response) => {
-        return response || fetch(event.request);
+      .then(response => {
+        if (response) {
+          return response;
+        }
+        return fetch(event.request);
       })
   );
 });
