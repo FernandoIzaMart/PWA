@@ -281,9 +281,41 @@
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
 
 
-        <script type="module">
-            
-          </script>
+        <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-messaging.js"></script>
 
+        <script>
+            // Your web app's Firebase configuration
+            const firebaseConfig = {
+            apiKey: "AIzaSyB10kyter7oJYYJ2RoCBf2Fa15B4wO79YA",
+            authDomain: "pushnotification-dba8c.firebaseapp.com",
+            projectId: "pushnotification-dba8c",
+            storageBucket: "pushnotification-dba8c.appspot.com",
+            messagingSenderId: "593376484217",
+            appId: "1:593376484217:web:3bfef690feab616ee5ada8"
+            };
+
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+
+            const messaging = firebase.messaging();
+
+            messaging.requestPermission()
+            .then(() => {
+                console.log('Permiso de notificaciones concedido.');
+
+                return messaging.getToken();
+            })
+            .then((token) => {
+                console.log('Token de registro:', token);
+
+                // Envía el token de registro al servidor para que pueda enviar notificaciones push al dispositivo
+                // Aquí puedes enviar el token a tu servidor utilizando una solicitud HTTP o guardarlo en una base de datos
+            })
+            .catch((error) => {
+                console.log('Error al solicitar permiso o al obtener el token:', error);
+            });
+
+        </script>
     </body>
 </html>
