@@ -1,7 +1,7 @@
 importScripts('assets/lib/cache-polyfill.js');
 
 let CACHE_VERSION = 'app-v0.00';
-// give all files path you want to work offline
+// Agregamos las rutas de todos los archivos que se trabajaran sin conexión
 let CACHE_FILES = [
   './',
   'index.html',
@@ -54,3 +54,45 @@ self.addEventListener('activate', function(event){
         })
     )
 })
+
+
+importScripts('https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js');
+importScripts('https://www.gstatic.com/firebasejs/9.0.2/firebase-messaging.js');
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyB10kyter7oJYYJ2RoCBf2Fa15B4wO79YA",
+  authDomain: "pushnotification-dba8c.firebaseapp.com",
+  projectId: "pushnotification-dba8c",
+  storageBucket: "pushnotification-dba8c.appspot.com",
+  messagingSenderId: "593376484217",
+  appId: "1:593376484217:web:3bfef690feab616ee5ada8"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+const messaging = firebase.messaging();
+
+self.addEventListener('push', (event) => {
+  const data = event.data.json();
+  const { title, body } = data;
+
+  self.registration.showNotification(title, {
+    body,
+  });
+});
+
+self.addEventListener('notificationclick', (event) => {
+  event.notification.close();
+  // Aquí puedes manejar el evento de clic en la notificación
+});
+
+messaging.onBackgroundMessage((payload) => {
+  const { title, body } = payload.notification;
+
+  self.registration.showNotification(title, {
+    body,
+  });
+});
+
