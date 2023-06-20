@@ -1,3 +1,7 @@
+const tokenString = document.getElementById("token");
+const errorMessage = document.getElementById("error");
+const message = document.getElementById("message");
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyB10kyter7oJYYJ2RoCBf2Fa15B4wO79YA",
