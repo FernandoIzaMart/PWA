@@ -13,18 +13,30 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 const messaging = firebase.messaging();
 
+messaging.onMessage((payload) => {
+  console.log("Mensaje Recibido", payload);
+
+  const messageElement = document.querySelector('.notification-content');
+  const dataHeaderElement = document.createElement('h5');
+  const dataElement = document.createElement('pre');
+  dataElement.style = "overflow-x: hidden;";
+  dataHeaderElement.textContent = "Mensaje recibido";
+  dataElement.textContent = JSON.stringify(payload, null, 2);
+  messageElement.appendChild(dataHeaderElement);
+  messageElement.appendChild(dataElement);
+});
+
 messaging.onBackgroundMessage((payload) => {
     console.log('[firebase-messaging-sw.js] Received background message ', payload);
     
-    const message = payload.data.json();
-    const title = message.notification.title;
-    const options = {
-      body: message.notification.body,
-      icon: 'path/to/notification-icon.png',
-      badge: 'path/to/notification-badge.png',
-      // Otras opciones de configuración
-    };
+    // Obtener el contenido de la notificación
+    const { notification } = payload;
+    const { title, body } = notification;
 
+    // Mostrar el contenido en el HTML
+    const notificationContent = document.getElementById('notification-content');
+    notificationContent.innerHTML = `<h3>${title}</h3><p>${body}</p>`;
 
-    self.registration.showNotification(title, options);
+    // Mostrar la notificación en el sistema
+    self.registration.showNotification(title, { body });
 }); 

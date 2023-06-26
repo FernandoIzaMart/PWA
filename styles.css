@@ -3711,3 +3711,68 @@ img.Devices{
     }
   }
   
+
+  .notification-icon {
+    position: relative;
+  }
+  
+  .notification-icon .badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .notification-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 9999;
+  }
+  
+  .notification-dropdown ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .notification-dropdown ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .notification-dropdown ul li:last-child {
+    border-bottom: none;
+  }
+  
+  .notification-content {
+    overflow-y: auto;
+    max-height: 300px;
+  }
+  
+  .notification-content h5 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .notification-content pre {
+    margin: 0;
+    font-size: 12px;
+    color: #888;
+  }
+  
+  
